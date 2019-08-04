@@ -1,0 +1,233 @@
+
+/* Fonts: Kristi; Schoolbell */
+@import url('https://fonts.googleapis.com/css?family=Kristi|Schoolbell&display=swap');
+
+/*
+COLOURS:
+blue: 3498db
+red: af2a00
+yellow: feae3b
+*/
+
+body {
+  background-color: #3498db; /* blue */
+  font-family: Helveltica, sans-serif;
+  font-size: 1em; }
+
+a {
+  color: #3498db; /* blue */ }
+
+a:hover {
+  color: #feae3b; /* yellow */ }
+
+#container {
+  width: 90%;
+  max-width: 60em;
+  min-width: 40em;
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
+
+/* ------ LOGIN/REGISTER/LOGOUT buttons ------
+   ------ also SIDE NAVIGATION          ------ */
+
+div.nav {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.nav a {
+  background-color: #feae3b; /* yellow */
+  padding: 0.3em;
+  border: 0.2em solid #000;
+  border-radius: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold; }
+
+.nav a:hover, a:active {
+  background-color: #af2a00; /* red */ }
+
+#hNav a { /* top buttons only */
+  width: 6em; }
+
+/* side nav only */
+nav li {
+  list-style-type: none; }
+
+nav a {
+  display: inline-block;
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
+  width: 8em; }
+
+nav {
+/*width: 12em;*/ }
+
+/* ------ HEADER STYLING ------ */
+header {
+  background-image: url(../img/bhlogo.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fff;
+  padding-left: 200px;
+  height: 210px;
+  border: 0.2em solid #000;
+  border-radius: 0.5em; }
+
+header h1 {
+  font-family: Schoolbell, "Comic Sans MS", sans-serif;
+  font-size: 6em;
+  color: #3498db; /* blue */
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,
+    1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-top: -0.1em; }
+
+header h2 {
+  font-family: Kristi, cursive;
+  font-size: 2.5em;
+  color: #feae3b; /* yellow */
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,
+    1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-top: -2em; }
+
+/* ------ MAIN CONTENT ------ */
+section {
+  background-color: #fff;
+  border: 0.2em solid #000;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: row; }
+
+main {
+  width: 80%;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em; }
+
+/* Main Content Headings */
+main h2 {
+  text-align: center;
+  font-family: Schoolbell, "Comic Sans MS", sans-serif;
+  font-size: 1.5em;
+  color: #af2a00; /* red */ }
+
+/* ------ FORMS ------ */
+#editAccount, #regF { width: 80%; }
+#search { width: 100%; }
+form {
+  width: 60%;
+  min-width: 24em;
+  margin: auto;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column; }
+
+form div {
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+label strong { /* indicates required field */
+  color: red; }
+
+span.error { /* error messages */
+  margin-left: 0.2em;
+  color: red; }
+
+span.small { /* used for password strength meter */
+  font-size: 0.8em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  align-self: center;
+}
+
+/* display textarea label above textbox */
+div.textbox {
+  align-self: flex-end;
+  flex-direction: column; }
+
+label {
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: bold; }
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 20em;
+  margin-left: 0.5em; }
+
+textarea {
+  display: block; }
+
+button {
+  margin-left: auto;
+  background-color: #feae3b; /* yellow */
+  border: 0.2em solid #000;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-weight: bold; }
+
+button:hover {
+  background-color: #af2a00; /* red */ }
+
+#search button {
+  margin-left: 0.2em;
+}
+#search div {
+  align-items: center;
+}
+
+/* ------ TABLES ------ */
+th { /* bottom border on header row */
+  border-bottom: 0.2em solid #000;
+  border-collapse: collapse; }
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.2em; }
+
+/* ------ PAGINATION ON LIBRARY PAGE ------ */
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+.pagination a {
+  display: inline-block;
+  margin: none;
+  padding: 0.4em 0.6em;
+  text-decoration: none;
+  background-color: #fff;
+  color: #feae3b; /* yellow */
+  border: 0.1em solid #3498db; /* blue */
+}
+.pagination a.current {
+  background-color: #3498db; /* blue */
+  color: #fff;
+}
+.pagination a:hover:not(.current) {
+  background-color: #feae3b; /* yellow */
+  color: #3498db; /* blue */
+}
+
+/* ------ STYLING FOR BOOK DETAILS PAGE ------ */
+#BookDetails {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+  justify-content: flex-start;
+}
+#BookDetails img {
+  display: block;
+  margin-right: 2em;
+  margin-bottom: 0.5em;
+}
